@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einstein's Wisdom</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background: linear-gradient(145deg, #1c1c2b, #1a2038);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar .links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .navbar .links a:hover {
+            color: #00d1ff;
+        }
+
+        /* Middle Content */
+        .middle-content {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .middle-content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .middle-content h1 {
+            margin: 20px 0;
+            font-size: 2rem;
+            color: #00d1ff;
+        }
+
+        .middle-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 10px auto;
+            color: #cccccc;
+        }
+
+        /* Buttons */
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            background: #00d1ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .buttons button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Background Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/1600x900/?abstract,dark');
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px) brightness(0.5);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="brand">Einstein Quotes</div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Middle Content -->
+    <div class="middle-content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Einstein">
+        <h1>"Imagination is more important than knowledge."</h1>
+        <p>Explore the genius of Albert Einstein through his words of wisdom and curiosity.</p>
+        <div class="buttons">
+            <button onclick="login()">Login</button>
+            <button onclick="signup()">Signup</button>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            alert("Login functionality coming soon!");
+        }
+
+        function signup() {
+            alert("Signup functionality coming soon!");
+        }
+    </script>
+</body>
+</html>
